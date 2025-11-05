@@ -5,7 +5,7 @@ This repository contains the Julia implementation of the **Regret–Uncertainty 
 - 👉 See the full ODD: `ODD_RegretUncertainty.md` (included in this repo).  
 - 👉 Scientific article draft: use the notebook’s equations/sections; the ODD mirrors the code as ground truth.
 
-The structure and tone of this README follow the example README you provided, with similar sections and emphasis on practical usage and traceability. fileciteturn2file0
+
 
 ---
 
@@ -16,8 +16,6 @@ The structure and tone of this README follow the example README you provided, wi
 - **`/results/`** — (Created at runtime) CSV summaries of time series and parameter configurations per run.
 - **`/figures/`** — (Optional) Saved plots, if plotting is enabled in the notebook.
 
-> If you prefer a single Julia script, export the notebook to `.jl` (e.g., with `nbconvert`) and keep the same folder layout for outputs.
-
 ---
 
 ## Quick Start
@@ -25,8 +23,6 @@ The structure and tone of this README follow the example README you provided, wi
 1. **Install Julia** (≥ 1.9 recommended) and the dependencies used in the notebook (e.g., `LightGraphs`, `Random`, `StatsBase`, `Distributions`, `DataFrames`, `CSV`, `SparseArrays`, `LinearAlgebra`, `Arpack`).  
 2. Open `RegretUncertaintyGood.ipynb` and run **all cells**. Default parameters will execute a full set of **seasons** with **Monte‑Carlo epidemic sampling** each season.  
 3. Outputs (CSV files) will be written under `./results/` with run‑specific suffixes (e.g., RNG seed/timestamp).
-
-> The example README you shared logs a compact **InfoMatrix** and a **Params** row per run; this README mirrors that spirit for clarity and reproducibility. fileciteturn2file0
 
 ---
 
@@ -51,8 +47,6 @@ For a structured description of entities, schedule, submodels, and parameters, r
 - **RNG Seeds:** Every run records seeds/configuration in results CSVs for replication.
 - **Batch Runs:** Duplicate the notebook, or parameterize via top‑level cells; keep a **one‑run‑per‑folder** convention (`results/`, `figures/`) for clarity.
 - **Performance Tips:** Reduce `Nsim` (per‑season epidemic samples) and shorten `vacCycles` to explore behavior quickly; increase them for stable estimates.
-
-> The original example README emphasizes logging minimal **InfoMatrix** and **Params** tables; you can do the same by writing a single summary row (e.g., final coverage, mean attitudes, last outbreak size) and the full parameter vector per run. fileciteturn2file0
 
 ---
 
@@ -93,8 +87,6 @@ Exact parameter names and defaults are defined in the notebook’s parameter cel
 5. **Norm Weights & Utilities** — compute context gates and normative weights; build utilities and intentions (quantal response).  
 6. **Norm Dynamics** — DeGroot‑style updates for `y, ỹ, x̃` with optional external signal targets.  
 7. **Loop & Stopping** — iterate seasons until max cycles or stability; log CSV outputs and (optionally) plots.
-
-> The example README you shared organizes the code map similarly (network → epidemics → norms/preferences → outputs), which we emulate here for familiarity. fileciteturn2file0
 
 ---
 

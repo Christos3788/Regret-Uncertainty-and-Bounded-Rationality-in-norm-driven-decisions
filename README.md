@@ -108,7 +108,7 @@ Exact parameter names and defaults are defined in the notebook’s parameter cel
 
 ## Citation
 
-If you use this code or ODD, please cite the associated manuscript (once available) and the ODD markdown (`ODD_RegretUncertainty.md`). For ODD structure, follow Grimm et al. (2020 update). The README structure takes cues from your example project. fileciteturn2file0
+If you use this code or ODD, please cite the associated manuscript (once available) and the ODD markdown (`ODD_RegretUncertainty.md`). For ODD structure, follow Grimm et al. (2020 update). 
 
 ---
 
